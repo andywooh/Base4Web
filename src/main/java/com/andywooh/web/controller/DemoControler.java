@@ -24,6 +24,10 @@ public class DemoControler {
 		
 	}
 	
+	/**
+	 * this content was added in home
+	 * @return
+	 */
 	@RequestMapping(value = "/to-other-page", method = RequestMethod.GET)
 	public String toOtherPage(){
 		return "other";
