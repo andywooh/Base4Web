@@ -6,7 +6,7 @@
   <body>   
 
      <div align="center">   
-	   <form action="/web/demo/say-hello.from" method="POST">
+	   <form action="/web/demo/say-hello" method="POST">
 		   <table>   
 			   <tr><th colspan="3" align="center">DEMO</th></tr>
 			   <tr>   
@@ -18,7 +18,7 @@
 			   </tr>   
 		   </table>   
 	   </form>
-	   <a href="/web/demo/to-other-page.from">ToOtherPage</a>
+	   <a href="/web/demo/to-other-page">ToOtherPage</a>
      </div>   
   </body>   
 </html>   

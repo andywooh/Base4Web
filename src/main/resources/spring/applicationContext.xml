@@ -20,17 +20,17 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 	 
-<!-- 	<util:properties id="details" location="classpath:details.properties"></util:properties> -->
+ 	<util:properties id="details" location="classpath:conf/details.properties"></util:properties>
 	
 	<!-- 组件扫描 -->
 	<context:component-scan base-package="com.andywooh"/>
 	
 	<!-- 支持RequestMapping   自动加载了 注解映射器HandlerMapping 和 注解适配器HandlerAdapter配置 等其他组件 -->
-	<mvc:annotation-driven />
+	<mvc:annotation-driven/>
 	
 	<!-- 视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="webapp/WEB-INF/jsp/"></property>
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 	

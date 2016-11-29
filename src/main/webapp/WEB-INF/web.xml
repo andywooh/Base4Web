@@ -19,10 +19,10 @@
 	 		<load-on-startup>1</load-on-startup>  <!-- 服务器启动后就实例化DispatcherServlet对象 -->
 	</servlet>
 	
-	<!-- 后缀为.from的请求会被springmvc的 DispatcherServlet处理-->
+	<!-- 后缀为xx的请求会被springmvc的 DispatcherServlet处理-->
 	<servlet-mapping>
 		<servlet-name>springmvc</servlet-name>
-		<url-pattern>*.from</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
 	<!-- 乱码问题  提交的数据必须是POST请求，否则不起作用-->
