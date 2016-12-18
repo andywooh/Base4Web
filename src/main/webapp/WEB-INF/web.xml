@@ -4,7 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 	
-    <display-name>Archetype Created Web Application</display-name>
+    <display-name>Servlet 3.0 Web Application</display-name>
 	<!-- DispatcherServlet -->
 	<servlet>
 	 		<servlet-name>springmvc</servlet-name>
@@ -24,9 +24,9 @@
 		<servlet-name>springmvc</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+
 	<!-- 乱码问题  提交的数据必须是POST请求，否则不起作用-->
- 	<filter>
+  	<filter>
 	 	<filter-name>encodingfilter</filter-name>
 	 	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 	 	<init-param>
@@ -34,7 +34,7 @@
 		<param-value>UTF-8</param-value>
 		</init-param>
 	</filter>
-	 
+
 	<filter-mapping>
 		<filter-name>encodingfilter</filter-name>
 		<url-pattern>/*</url-pattern>

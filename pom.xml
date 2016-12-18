@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.andywooh</groupId>
   <artifactId>web</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>web Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -17,6 +17,7 @@
   </properties>
   
   <dependencies>
+  
   	<!-- servlet jsp页面会用到 -->
 	<dependency>
 		<groupId>javax.servlet</groupId>
@@ -39,6 +40,12 @@
 	    <version>${spring.version}</version>
 	</dependency>
 	
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.6</version>
+</dependency>
 	
 
   </dependencies>

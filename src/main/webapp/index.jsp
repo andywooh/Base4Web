@@ -19,6 +19,7 @@
 		   </table>   
 	   </form>
 	   <a href="/web/demo/to-other-page">ToOtherPage</a>
+	   <a href="/web/demo/data-source">Test DataSource</a>
      </div>   
   </body>   
 </html>   

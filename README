@@ -1,0 +1,18 @@
+Title:数据源测试工程
+Note:
+	连接Mysql数据库
+	在Tomcat server.xml文件的<Host></Host>标签中添加内容如下：
+		<Context docBase="Base4Web" path="/web" reloadable="true" source="org.eclipse.jst.jee.server:Base4Web">  
+		<Resource 
+			       name="jdbc/andywooh" 
+			       auth="Container" 
+			       type="javax.sql.DataSource"
+			       maxActive="100" 
+			       maxIdle="30" 
+			       maxWait="10000"
+			       username="root" 
+			       password="root" 
+			       driverClassName="com.mysql.jdbc.Driver"
+			       url="jdbc:mysql://localhost:3306/andywooh"/>
+		</Context>  
+
